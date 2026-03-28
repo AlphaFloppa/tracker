@@ -1,0 +1,47 @@
+form{
+    padding-top: 1rem;
+    width: 100%;
+    flex-grow: 6;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputsContainer{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.input{
+    width: 100%;
+    height: 5svh;
+    border-radius: 5px;
+    padding: 5px 15px;
+    border: grey solid 2px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.input:focus{
+    outline: none;
+    border: rgb(80, 80, 80) solid 2px
+}
+
+.input::placeholder{
+    font-size: 1rem;
+}
+
+.submit{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(1, 98, 1);
+    color: white;
+    aspect-ratio: 690/45;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 5px;
+}

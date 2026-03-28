@@ -1,0 +1,46 @@
+.mainContainer{
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 5% 10%;
+    justify-content: space-between;
+}
+
+.pic{
+    height: 100%;
+    flex-grow: 2;
+    width: calc(40% - 1.5rem);
+    flex-shrink: 0;
+    background: url(../../../public/signPic.png) center/contain no-repeat;
+}
+
+.panel{
+    padding: 2rem;
+    padding-bottom: 0;
+    /*outline: solid black 2px;*/
+    height: 100%;
+    width: calc(50% - 1.5rem);
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.infoContainer{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.8rem;
+}
+
+.text{
+    font-weight: 500;
+}
+
+.text,
+.header{
+    margin: 0
+}

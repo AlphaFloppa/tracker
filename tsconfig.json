@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    // Базовые настройки
+    "target": "es5",
+    "module": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "outDir": "./public/build/ts-output", // Папка для .js файлов
+    "rootDir": "./assets", // Корневая папка с исходниками
+    "noEmit": false, // Разрешить генерацию файлов
+    "allowJs": true, // Разрешить .js файлы
+    "checkJs": false, // Не проверять .js файлы
+    
+    // Настройки для модулей
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    
+    // Важно для React
+    "jsx": "react-jsx",
+    
+    // Настройки путей
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["assets/*"],
+      "*.module.css": ["declarations.d.ts"]
+    },
+    
+  },
+  "include": [
+    "assets/**/*",
+    "declarations.d.ts"  // Добавим этот файл для CSS Modules
+  ],
+  "exclude": [
+    "node_modules",
+    "public",
+    "var"
+  ]
+}
